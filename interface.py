@@ -10,7 +10,7 @@ glob.composer = ""
 glob.deck_suffix = "Seperate Hands"
 
 # settings
-glob.test_mode = False
+glob.test_mode = True
 glob.override_deck = True
 
 # init
