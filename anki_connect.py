@@ -1,8 +1,8 @@
 import json
 import urllib.request
 from tqdm import tqdm
-import init_v5
-import globals_v5 as glob
+import init
+import globals as glob
 
 
 
@@ -35,7 +35,7 @@ def delete_deck(name, cards_too=False):
     print("deck deleted: {}".format(name))
 
 def init_deck():
-    name = init_v5.make_deck_name()
+    name = init.make_deck_name()
     if glob.override_deck:
         delete_deck(name=name, cards_too=True)
     create_deck(name)
@@ -43,7 +43,7 @@ def init_deck():
 
 def add_note(front="", back="", modelName="Basic", allow_duplicate=False, duplicate_scope="deck",
              separate_hands=False):
-    deckName = init_v5.make_deck_name()
+    deckName = init.make_deck_name()
     front_suffix = ""
     if separate_hands:
         for i in range(3):

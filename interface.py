@@ -1,8 +1,7 @@
-from anki_connect_v5 import add_single_bars, add_multiple_bars
-from init_v5 import make_bar_names, make_deck_name
-import anki_connect_v5
-import templates_v5 as temp
-import globals_v5 as glob
+from anki_connect import add_single_bars, add_multiple_bars
+from init import make_bar_names
+import anki_connect
+import globals as glob
 
 # deck information
 glob.instrument = "Violine"
@@ -15,7 +14,7 @@ glob.test_mode = False
 glob.override_deck = True
 
 # init
-anki_connect_v5.init_deck()
+anki_connect.init_deck()
 
 # interface
 bar_names = make_bar_names(53)

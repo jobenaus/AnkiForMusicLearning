@@ -1,4 +1,4 @@
-import globals_v5 as glob
+import globals as glob
 
 
 def make_bar_names(number_of_bars, first_bar = 1, repeats = {}, volta_type_a = {}, volta_type_b = {}):
