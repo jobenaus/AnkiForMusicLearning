@@ -36,7 +36,7 @@ def make_bar_names(number_of_bars, first_bar = 1, repeats = {}, volta_type_a = {
 
 def make_deck_name():
     if glob.test_mode:
-        deck_name = "test5: " + glob.instrument + ": " + glob.title + " - " + glob.composer + " " + glob.deck_suffix
+        deck_name = "[TEST]: " + glob.instrument + ": " + glob.title + " - " + glob.composer + " " + glob.deck_suffix
     else:
         deck_name = glob.instrument + ": " + glob.title + " - " + glob.composer + " " + glob.deck_suffix
     return deck_name

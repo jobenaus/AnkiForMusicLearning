@@ -5,9 +5,9 @@ import globals as glob
 
 # deck information
 glob.instrument = "Violine"
-glob.title = "Cappricio"
-glob.composer = ""
-glob.deck_suffix = "Seperate Hands"
+glob.title = "Die Tapferkeit"
+glob.composer = "Telemann"
+glob.deck_suffix = ""
 
 # settings
 glob.test_mode = True
