@@ -34,3 +34,4 @@ if __name__ == "__main__":
     # create notes
     # anki_connect.add_single_bars(deck.name, bar_names)
     anki_connect.add_multiple_bars(deck.name, 1, 3, bar_names)
+    asdge
