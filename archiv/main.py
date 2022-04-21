@@ -1,17 +1,8 @@
-import anki_connect
-import init
-from classes import Deck
+from archiv.classes import Deck
+from archiv import anki_connect, init
 
 
-# deck information
-instrument = "Violine"
-piece_title = "Cappricio"
-composer = "Grazyna Bracewicz"
-deck_suffix = "suffix"
 
-# settings
-test_mode = True
-override_deck = True
 
 # create deck
 deck = Deck(piece_title, composer, instrument, deck_suffix)
@@ -28,8 +19,8 @@ if __name__ == "__main__":
     # create deck
     anki_connect.init_deck(deck.name)
 
-    # make item_list
-    bar_names = init.make_bar_names(10, volta_type_a={6: [2, [2, 4]]})
+    #make item_list
+    bar_names = init.make_bar_names(10, volta_type_a={6:[2, [2, 4]]})
 
     # create notes
     # anki_connect.add_single_bars(deck.name, bar_names)

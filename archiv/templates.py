@@ -1,7 +1,6 @@
-import anki_connect
-import init
+from archiv import anki_connect, init, song_archive
 from colorama import Fore
-import song_archive
+
 
 def piano_piece(number_of_bars, difficulty = 1):
     bar_names = init.make_bar_names(number_of_bars)
