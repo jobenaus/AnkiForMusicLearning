@@ -1,4 +1,4 @@
-#!/Users/johannesobenaus/PycharmProjects/AnkiForMusicLearning/venv/bin/python
+#!/Users/johannes/Documents/Hobby/Programmieren/AnkiForMusicLearning/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
