@@ -18,8 +18,9 @@ def piano_piece(number_of_bars, difficulty=1):
         print(Fore.RED + "piano: difficulty not available")
 
 
-def folk_song(url, max_interval=3):
-    bar_names = song_archive.get_text(url)
+def folk_song(url="", max_interval=3, bar_names=None):
+    if bar_names == None:
+        bar_names = song_archive.get_text(url)
 
     for j in range(1, max_interval + 1):
         for i in bar_names:
