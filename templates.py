@@ -1,6 +1,6 @@
 import anki_connect
 import init
-from colorama import Fore
+
 import song_archive
 
 
@@ -15,7 +15,7 @@ def piano_piece(number_of_bars, difficulty=1):
         anki_connect.add_single_bars(bar_names, separate_hands=True)
         anki_connect.add_multiple_bars(1, 3, bar_names)
     else:
-        print(Fore.RED + "piano: difficulty not available")
+        print("piano: difficulty not available")
 
 
 def folk_song(url="", max_interval=3, bar_names=None):
