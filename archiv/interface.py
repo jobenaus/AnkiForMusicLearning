@@ -1,6 +1,6 @@
-from anki_connect import add_single_bars, add_multiple_bars
+from archiv.anki_connect import add_single_bars, add_multiple_bars
 from init import make_bar_names
-import anki_connect
+import archiv.anki_connect as anki_connect
 import templates
 import globals as glob
 

@@ -1,6 +1,7 @@
-import anki_connect
+import archiv.anki_connect as anki_connect
 
 from settings import Settings
+
 
 class Deck(Settings):
     instrument: str
@@ -8,7 +9,13 @@ class Deck(Settings):
     composer: str
     title_suffix: str
 
-    def __init__(self, piece_title="unknown title", composer="unknown composer", instrument=None, title_suffix=None):
+    def __init__(
+        self,
+        piece_title="unknown title",
+        composer="unknown composer",
+        instrument=None,
+        title_suffix=None,
+    ):
         self.instrument = instrument
         self.piece_title = piece_title
         self.composer = composer
