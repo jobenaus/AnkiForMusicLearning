@@ -1,7 +1,11 @@
+venv
+.idea
+.vscode
+__pycache__
 *.pyc
 *.code-workspace
+*.icloud
 
-.idea/
-.vscode
-
-venv
+Flow my Tears.txt
+archiv/Lindenbaum.txt
+archiv/La vendetta.txt
