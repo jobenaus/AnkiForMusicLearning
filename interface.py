@@ -6,8 +6,8 @@ import globals as glob
 
 # deck information
 glob.instrument = "Gesang"
-glob.title = "Flow my tears"
-glob.composer = "Dowland"
+glob.title = "La vendetta"
+glob.composer = "Mozart"
 glob.deck_suffix = ""
 
 # settings
@@ -20,32 +20,41 @@ anki_connect.init_deck()
 # interface
 
 bar_names = [
-    "Flow my tears fall from your springs,",
-    "Exil'd forever let me mourn:",
-    "Where night's black bird her sad infamy sings,",
-    "There let me live forlorn.",
-    "Down vain lights shine you no more,",
-    "No nights are dark enough for those",
-    "That in despair their last fortunes deplore,",
-    "Light doth but shame disclose.",
-    "Never may my woes be relieved,",
-    "Since pity is fled, ",
-    "And tears, and sighs, and groans",
-    "my weary days, my weary days",
-    "Of all joys have deprived.",
-    "From the highest spire of contentment,",
-    "My fortune is thrown,",
-    "And fear, and grief, and pain",
-    "for my deserts, for my deserts,",
-    "Are my hopes since hope is gone.",
-    "Hark you shadows that in darkness dwell,",
-    "Learn to contemn light,",
-    "Happy, happy they that in hell",
-    "Feel not the world's despite.",
-    "Hark you shadows that in darkness dwell, (2)",
-    "Learn to contemn light, (2)",
-    "Happy, happy they that in hell (2)",
-    "Feel not the world's despite. (2)",
+    "La vendetta, oh la vendetta,",
+    "è un piacer serbato ai saggi,",
+    "è un piacer serbato ai saggi. (2)",
+    "L'obliar l'onte, e gl'oltraggi",
+    "l'obliar l'onte, e gl' oltraggi (2)",
+    "è bassezza, è ognor viltà,",
+    "è bassezza, è ognor viltà, è ognor viltà.",
+    "Coll' astuzia, coll' arguzia,",
+    "col giudizio, col criterio,",
+    "si protrebbe, si protrebbe,",
+    "coll' astuzia, coll' arguzia, (2)",
+    "col giudizio, col criterio, (2)",
+    "si protrebbe, si protrebbe, (2)",
+    "si protrebbe, si protrebbe... (3)",
+    "il fatto è serio, ",
+    "il fatto è serio, (2)",
+    "il fatto è serio... (3)",
+    "ma credete, si farà,",
+    "ma credete, si farà. (2)",
+    "Se tutto il codice dovessi volgere,",
+    "se tutto l'indice dovessi leggere,",
+    "con un equivoco, con un sinonimo",
+    "qualche garbuglio si troverà,",
+    "se tutto il codice dovessi volgere, (2)",
+    "se tutto l'indice dovessi leggere, (2)",
+    "con un equivoco, con un sinonimo (2)",
+    "qualche garbuglio si troverà, (2)",
+    "qualche garbuglio si troverà, si troverà.",
+    "Tutta Siviglia conosce Bartolo,",
+    "il birbo Figaro vostro sarà,",
+    "tutta Siviglia conosce Bartolo, (2)",
+    "il birbo Figaro vostro sarà, (2)",
+    "il birbo Figaro vostro sarà, (3)",
+    "il birbo Figaro vostro sarà, (4)",
+    "vostro sarà, vostro sarà, vostro sarà.",
 ]
 
 templates.folk_song(bar_names=bar_names)
