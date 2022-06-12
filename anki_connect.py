@@ -7,17 +7,19 @@ def request(action, **params):
 
 
 def invoke(action, **params):
-    URL = "http://localhost:8765"
-    requestJson = json.dumps(request(action, **params)).encode("utf-8")
+    url = "http://localhost:8765"
+    request_json = json.dumps(request(action, **params)).encode("utf-8")
     try:
-        responseJson = urllib.request.urlopen(urllib.request.Request(URL, requestJson))
-    except ConnectionRefusedError as e:
+        response_json = urllib.request.urlopen(
+            urllib.request.Request(url, request_json)
+        )
+    except urllib.error.URLError:
         print(
-            f"ConnectionError: Could not reach: {URL}. Make sure that Anki is opened and AnkiConnect is installed."
+            f"URLError: Could not reach: {url}. Make sure that Anki is opened and AnkiConnect is installed."
         )
 
         return
-    response = json.load(responseJson)
+    response = json.load(response_json)
 
     if len(response) != 2:
         raise Exception("response has an unexpected number of fields")
@@ -32,4 +34,4 @@ def invoke(action, **params):
 
 invoke("createDeck", deck="test1")
 result = invoke("deckNames")
-print("got list of decks: {}".format(result))
+print(f"got list of decks: {result}")
