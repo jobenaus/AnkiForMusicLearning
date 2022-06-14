@@ -1,4 +1,4 @@
-from src.anki_script.anki_connect import request
+from app.anki_connect import request
 
 
 def test_request_one_parameter():
