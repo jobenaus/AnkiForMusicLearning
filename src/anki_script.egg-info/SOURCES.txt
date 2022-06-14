@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/anki_script/__init__.py
+src/anki_script/anki_connect.py
+src/anki_script/main.py
+src/anki_script.egg-info/PKG-INFO
+src/anki_script.egg-info/SOURCES.txt
+src/anki_script.egg-info/dependency_links.txt
+src/anki_script.egg-info/not-zip-safe
+src/anki_script.egg-info/requires.txt
+src/anki_script.egg-info/top_level.txt
