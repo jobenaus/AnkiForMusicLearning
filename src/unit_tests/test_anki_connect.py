@@ -9,3 +9,4 @@ def test_request_one_parameter():
     }
     actual = request("getEaseFactors", cards=[1483959291685, 1483959293217])
     assert actual == expected
+    
