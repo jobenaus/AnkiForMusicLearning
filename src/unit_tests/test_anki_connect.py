@@ -1,7 +1,11 @@
-from app.anki_connect import request
+"""
+Test that the request function returns the correct request.
+"""
+from anki_connect import request
 
 
 def test_request_one_parameter():
+    """Tast that one parameter is correctly handled by request."""
     expected = {
         "action": "getEaseFactors",
         "version": 6,
@@ -12,6 +16,7 @@ def test_request_one_parameter():
 
 
 def test_request_multiple_parameters():
+    """Test that multiple parameters are correctly handled by request."""
     expected = {
         "action": "setSpecificValueOfCard",
         "version": 6,

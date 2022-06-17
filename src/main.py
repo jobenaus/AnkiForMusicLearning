@@ -1,4 +1,8 @@
+""" Main module """
+
+
 def main():
+    """Main function"""
     # TODO
     return
 
