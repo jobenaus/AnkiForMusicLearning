@@ -106,7 +106,9 @@ class TestHandleResponse:
 
     # No result field
     def test_handle_response_no_result_field(self):
-        """Test that handle_response raises an exception, when no result field is present. But right number of fields."""
+        """
+        Test that handle_response raises an exception, when no result field is present. But right number of fields.
+        """
         response = {"error": "unsupported action", "extra": "field"}
         with pytest.raises(Exception) as excinfo:
             handle_response(response)
