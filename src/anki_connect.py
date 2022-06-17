@@ -23,9 +23,9 @@ def invoke(action, **params):
         response_json = urllib.request.urlopen(
             urllib.request.Request(ANKI_CONNECT_URL, request_json)
         )
-    except urllib.error.URLError:
+    except urllib.error.URLError as exc:
         print(CONNECTION_ERROR_MESSAGE)
-        sys.exit()
+        return exc
 
     response = json.load(response_json)
 
@@ -48,6 +48,6 @@ def handle_response(response):
 # For testing purposes.
 if __name__ == "__main__":
 
-    invoke("deckNames")
+    print(invoke("deckNames"))
     # handle_response({"result": None, "error": "unsupported action"})
     # raise Exception("unsupported action")
