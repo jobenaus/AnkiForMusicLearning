@@ -1,11 +1,11 @@
 """
 Python script for musicians that helps with adding notes to Anki.
 """
-
+from helpers import load_settings
 
 def main():
     """Main function"""
-    # TODO Load settings.tx
+    settings = load_settings()
     # TODO Load interface.txt
     # TODO Make List of items that shall be added to Anki
     # TODO Write to items.txt
