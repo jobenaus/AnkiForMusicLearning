@@ -48,4 +48,6 @@ def handle_response(response):
 # For testing purposes.
 if __name__ == "__main__":
 
-    invoke("test")
+    invoke("deckNames")
+    # handle_response({"result": None, "error": "unsupported action"})
+    # raise Exception("unsupported action")
