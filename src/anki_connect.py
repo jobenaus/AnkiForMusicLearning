@@ -29,6 +29,11 @@ def invoke(action, **params):
 
     response = json.load(response_json)
 
+    return handle_response(response)
+
+
+def handle_response(response):
+    """Handles the response from AnkiConnect."""
     if len(response) != 2:
         raise Exception("response has an unexpected number of fields")
     if "error" not in response:
