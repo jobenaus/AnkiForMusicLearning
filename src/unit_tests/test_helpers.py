@@ -11,3 +11,5 @@ class TestLoadSettings:
         with pytest.raises(FileNotFoundError) as excinfo:
             load_settings()
         assert excinfo.value.args[0] == "settings.json not found"
+
+    # TODO test load_settings with settings.json file present and che ckeck if settings are loaded correctly
