@@ -85,7 +85,11 @@ class TestHandleResponse:
 
     def test_handle_response_to_many_fields(self):
         """Test that handle_response raises an exception, when too many fields are present."""
-        response = {"result": ["Default", "Filtered Deck 1"], "error": None, "extra": "field"}
+        response = {
+            "result": ["Default", "Filtered Deck 1"],
+            "error": None,
+            "extra": "field",
+        }
         with pytest.raises(Exception) as excinfo:
             handle_response(response)
 

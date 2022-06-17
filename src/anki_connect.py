@@ -4,7 +4,7 @@ Is an interface to AnkiConnect.
 
 import json
 import urllib.request
-import sys
+
 
 from constants import ANKI_CONNECT_URL, CONNECTION_ERROR_MESSAGE
 
