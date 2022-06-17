@@ -1,10 +1,12 @@
 """
 Is an interface to AnkiConnect.
 """
+
 import json
 import urllib.request
+import sys
 
-from constants import ANKI_CONNECT_URL
+from constants import ANKI_CONNECT_URL, CONNECTION_ERROR_MESSAGE
 
 ANKI_CONNECT_URL = "http://localhost:8765"
 
@@ -22,11 +24,9 @@ def invoke(action, **params):
             urllib.request.Request(ANKI_CONNECT_URL, request_json)
         )
     except urllib.error.URLError:
-        print(
-            f"URLError: Could not reach: {ANKI_CONNECT_URL}. Make sure that Anki is opened and AnkiConnect is installed."
-        )
+        print(CONNECTION_ERROR_MESSAGE)
+        sys.exit()
 
-        return
     response = json.load(response_json)
 
     if len(response) != 2:
@@ -38,3 +38,9 @@ def invoke(action, **params):
     if response["error"] is not None:
         raise Exception(response["error"])
     return response["result"]
+
+
+# For testing purposes.
+if __name__ == "__main__":
+
+    invoke("test")
