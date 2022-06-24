@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 540161d4bebcec7f8610300364bd3c459847991f jobenaus <j.obenaus@icloud.com> 1654892452 +0200	clone: from https://github.com/jobenaus/AnkiForMusicLearning.git
+540161d4bebcec7f8610300364bd3c459847991f 793ab9baf7bdf474c073a63acdf03b280e59e3b5 jobenaus <j.obenaus@icloud.com> 1654897171 +0200	commit: requirements.txt added
+793ab9baf7bdf474c073a63acdf03b280e59e3b5 e8ce35c4ba4bbc63491f1538f74818c7c26eaf7b jobenaus <j.obenaus@icloud.com> 1654898895 +0200	commit: New Virtual Env
+e8ce35c4ba4bbc63491f1538f74818c7c26eaf7b 0d2cdc466369e112a929ab70b3b63fd25d92cf41 jobenaus <j.obenaus@icloud.com> 1654899582 +0200	commit: deleted .idea folder
+0d2cdc466369e112a929ab70b3b63fd25d92cf41 67816292cdd58c810d98e247376af42e131cd106 jobenaus <j.obenaus@icloud.com> 1654902347 +0200	merge newfeature: Fast-forward
+67816292cdd58c810d98e247376af42e131cd106 20ebffad1b2670ea99814738216691f5325e4b29 jobenaus <j.obenaus@icloud.com> 1654902733 +0200	commit: .gitignore added
+20ebffad1b2670ea99814738216691f5325e4b29 36b99ca70a7510ee650f0ae5e102ffabe0f93dee jobenaus <j.obenaus@icloud.com> 1654904962 +0200	commit: settings.json added to .gitignore
+36b99ca70a7510ee650f0ae5e102ffabe0f93dee 50a180f0dc7ad0aef7e8a7811c403e68e82cac79 jobenaus <j.obenaus@icloud.com> 1654906897 +0200	commit: Fileformatting and updated .gitignore
+50a180f0dc7ad0aef7e8a7811c403e68e82cac79 7b1469bee73973fa3c56521499c00725adda365c jobenaus <j.obenaus@icloud.com> 1654907492 +0200	pull: Fast-forward

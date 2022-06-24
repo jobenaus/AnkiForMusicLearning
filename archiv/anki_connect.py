@@ -1,10 +1,8 @@
 import json
 import urllib.request
 from tqdm import tqdm
-import init
-import globals as glob
 
-
+import main
 
 
 def request(action, **params):
@@ -34,16 +32,17 @@ def delete_deck(name, cards_too=False):
     invoke("deleteDecks", decks=[name], cardsToo=cards_too)
     print("deck deleted: {}".format(name))
 
-def init_deck():
-    name = init.make_deck_name()
-    if glob.override_deck:
+
+def init_deck(name):
+    #name = init.make_deck_name()
+    if main.deck.override_deck:
         delete_deck(name=name, cards_too=True)
     create_deck(name)
 
 
-def add_note(front="", back="", modelName="Basic", allow_duplicate=False, duplicate_scope="deck",
+def add_note(deck_name,front="", back="", modelName="Basic", allow_duplicate=False, duplicate_scope="deck",
              separate_hands=False):
-    deckName = init.make_deck_name()
+    deckName = deck_name
     front_suffix = ""
     if separate_hands:
         for i in range(3):
@@ -72,7 +71,7 @@ def add_note(front="", back="", modelName="Basic", allow_duplicate=False, duplic
             "deckName": deckName,
             "modelName": modelName,
             "fields": {
-                "Front": front + " "+ front_suffix,
+                "Front": front + " " + front_suffix,
                 "Back": back
             },
             "options": {
@@ -82,34 +81,31 @@ def add_note(front="", back="", modelName="Basic", allow_duplicate=False, duplic
         })
 
 
-def add_single_bars(bar_names, separate_hands = False):
+def add_single_bars(deck_name,bar_names, separate_hands=False):
     for i in tqdm(bar_names):
         try:
-            add_note(front="Takt " + i, separate_hands=separate_hands)
+            add_note(deck_name, front="Takt " + i, separate_hands=separate_hands)
         except:
             print(f"error single bar: {i}")
-            #for j in i:
+            # for j in i:
             #    try:
             #        add_note("Takt " + j, separate_hands=separate_hands)
             #    except:
             #        for k in j:
-             #           try:
-             #               add_note("Takt " + k, separate_hands=separate_hands)
-                #        except:
-             #               print(f"{k} is not a string")
+            #           try:
+            #               add_note("Takt " + k, separate_hands=separate_hands)
+            #        except:
+            #               print(f"{k} is not a string")
 
-def add_multiple_bars(min_interval, max_interval, bar_names, separate_hands=False):
 
-    for k in tqdm(range(min_interval, max_interval+1)):
+def add_multiple_bars(deck_name, min_interval, max_interval, bar_names, separate_hands=False):
+    for k in tqdm(range(min_interval, max_interval + 1)):
         for i in tqdm(range(len(bar_names))):
 
             if i - k >= 0:
 
-
                 try:
-                    add_note(front="Takt " + bar_names[i - k] + " - " + bar_names[i], separate_hands=separate_hands)
+                    add_note(deck_name, front="Takt " + bar_names[i - k] + " - " + bar_names[i], separate_hands=separate_hands)
 
                 except:
                     print(f"duplicate with i: {i}, k: {k}")
-
-

@@ -1,0 +1,24 @@
+0000000000000000000000000000000000000000 fb34dae91c60a821a8cde0d7f1f50aa8609f451b jobenaus <j.obenaus@icloud.com> 1654975475 +0200	branch: Created from HEAD
+fb34dae91c60a821a8cde0d7f1f50aa8609f451b 3117bb8d04126774db52b62f282d234dae55820c jobenaus <j.obenaus@icloud.com> 1654976091 +0200	commit: archived old files and created main.py
+3117bb8d04126774db52b62f282d234dae55820c 7917f8d644da6d6008f8defa4637852c913e02b2 jobenaus <j.obenaus@icloud.com> 1655042728 +0200	commit: working on catching urlopen error
+7917f8d644da6d6008f8defa4637852c913e02b2 290192fd3d686e4b0d1096cda05741627720fb3f jobenaus <j.obenaus@icloud.com> 1655045128 +0200	commit: catching URLError when Anki isn't open
+290192fd3d686e4b0d1096cda05741627720fb3f c9736f90105136489cb31e2d38fa0111f5abd218 jobenaus <j.obenaus@icloud.com> 1655226650 +0200	commit: working on implementing tests
+c9736f90105136489cb31e2d38fa0111f5abd218 e47e7c68b8f05242dad6d7f11d27b90083e1a3af jobenaus <j.obenaus@icloud.com> 1655232258 +0200	commit: added first test
+e47e7c68b8f05242dad6d7f11d27b90083e1a3af 9a2671dc78ec4badcb19d631446de594b2664bf8 jobenaus <j.obenaus@icloud.com> 1655243721 +0200	commit: added settings_backup.txt
+9a2671dc78ec4badcb19d631446de594b2664bf8 517bc695afa70a11c55081cb2370b854ce870a42 jobenaus <j.obenaus@icloud.com> 1655244038 +0200	commit: changed settings
+517bc695afa70a11c55081cb2370b854ce870a42 4b8ab528ac839215b34e944db516a23c898361c5 jobenaus <j.obenaus@icloud.com> 1655244201 +0200	commit: reconfigured testing
+4b8ab528ac839215b34e944db516a23c898361c5 f1fb86db07adca9a309c5a7edd1a51542892d740 jobenaus <j.obenaus@icloud.com> 1655244501 +0200	commit: implemented test_request_multiple_parameters
+f1fb86db07adca9a309c5a7edd1a51542892d740 ba557e80b2d26e69ad8ba51902a6ccf1cac3a3e0 jobenaus <j.obenaus@icloud.com> 1655454084 +0200	commit: Restructure, that tests work.
+ba557e80b2d26e69ad8ba51902a6ccf1cac3a3e0 ee23f47fbcd3ae548de8a24340d0fa422725000e jobenaus <j.obenaus@icloud.com> 1655455558 +0200	commit: Improving Connection Error to AnkiConnect
+ee23f47fbcd3ae548de8a24340d0fa422725000e 8e1302cd4cb034d3dc8b623dff926a0d1a3a38ae jobenaus <j.obenaus@icloud.com> 1655455730 +0200	commit: Added TestRequest class
+8e1302cd4cb034d3dc8b623dff926a0d1a3a38ae 62063cfaba5050002e48477fc5ce260c9efde500 jobenaus <j.obenaus@icloud.com> 1655456686 +0200	commit: added handle_response function
+62063cfaba5050002e48477fc5ce260c9efde500 eae36eec339463a17d9215e969753a2e7368ee8d jobenaus <j.obenaus@icloud.com> 1655459815 +0200	commit: full coverage of handle_response
+eae36eec339463a17d9215e969753a2e7368ee8d a4c8ca62e228c951c5aad0f95587245a148cd5f8 jobenaus <j.obenaus@icloud.com> 1655461734 +0200	commit: invoke returns connection error
+a4c8ca62e228c951c5aad0f95587245a148cd5f8 4f7b15000e1ef01a4272139e9b76a178e7e8ed59 jobenaus <j.obenaus@icloud.com> 1655461791 +0200	commit: deleted unused import sys
+4f7b15000e1ef01a4272139e9b76a178e7e8ed59 224610e9a2f8d464d8166de2a1f2a488b43b501b jobenaus <j.obenaus@icloud.com> 1655461863 +0200	commit: formatting
+224610e9a2f8d464d8166de2a1f2a488b43b501b e8054da0cb9605907bf50c76856424bd2f4ac343 jobenaus <j.obenaus@icloud.com> 1655468243 +0200	commit: made TODO list in main()
+e8054da0cb9605907bf50c76856424bd2f4ac343 c17c28a22f1daef5d877bd59b4becee6b262d3ac jobenaus <j.obenaus@icloud.com> 1655472440 +0200	commit: added load_settings
+c17c28a22f1daef5d877bd59b4becee6b262d3ac 2ebcfc251035e2625e283fab04a81b9c361832e4 jobenaus <j.obenaus@icloud.com> 1655473428 +0200	commit: test_load_settings_no_settings_file_raises_error
+2ebcfc251035e2625e283fab04a81b9c361832e4 c14541b3bdb6ea7eaf30d242a33b25277c553b00 jobenaus <j.obenaus@icloud.com> 1655473780 +0200	commit: Todo added to test_load_settings
+c14541b3bdb6ea7eaf30d242a33b25277c553b00 a1ca260a0cca3757b136d5224b23e5428329527e jobenaus <j.obenaus@icloud.com> 1656058174 +0200	commit: working on interface.json
+a1ca260a0cca3757b136d5224b23e5428329527e f132000e01f4962559fcc5f9b6dc712a23cb9a3a jobenaus <j.obenaus@icloud.com> 1656061659 +0200	commit: created deck_creation_data.json

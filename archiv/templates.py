@@ -1,10 +1,8 @@
-import archiv.anki_connect as anki_connect
-import init
-
-import song_archive
+from archiv import anki_connect, init, song_archive
+from colorama import Fore
 
 
-def piano_piece(number_of_bars, difficulty=1):
+def piano_piece(number_of_bars, difficulty = 1):
     bar_names = init.make_bar_names(number_of_bars)
     if difficulty == 1:
         anki_connect.add_multiple_bars(1, 3, bar_names)
@@ -15,12 +13,10 @@ def piano_piece(number_of_bars, difficulty=1):
         anki_connect.add_single_bars(bar_names, separate_hands=True)
         anki_connect.add_multiple_bars(1, 3, bar_names)
     else:
-        print("piano: difficulty not available")
+        print(Fore.RED + "piano: difficulty not available")
 
-
-def folk_song(url="", max_interval=3, bar_names=None):
-    if bar_names == None:
-        bar_names = song_archive.get_text(url)
+def folk_song(url, max_interval = 3):
+    bar_names = song_archive.get_text(url)
 
     for j in range(1, max_interval + 1):
         for i in bar_names:
@@ -34,6 +30,8 @@ def folk_song(url="", max_interval=3, bar_names=None):
             except:
                 print("error")
 
+    for j in range(1, max_interval + 1):
+        for i in bar_names:
             try:
 
                 front = str(j) + ": " + i + " (Gesang)"
