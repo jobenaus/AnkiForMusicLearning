@@ -1,7 +1,0 @@
-0000000000000000000000000000000000000000 ac04f6e3e56c3b4dfad611c38f227929e65ed12d jobenaus <j.obenaus@icloud.com> 1654954892 +0200	branch: Created from origin/refactoring
-ac04f6e3e56c3b4dfad611c38f227929e65ed12d 8a342a5c6093230280749cf50f2ada7b52252e7f jobenaus <j.obenaus@icloud.com> 1654955627 +0200	rebase (continue) (finish): refs/heads/refactoring onto 7b1469bee73973fa3c56521499c00725adda365c
-8a342a5c6093230280749cf50f2ada7b52252e7f 348bd69d95e6d881246f5db184051cb6529b242b jobenaus <j.obenaus@icloud.com> 1654955639 +0200	pull --tags origin refactoring: Merge made by the 'recursive' strategy.
-348bd69d95e6d881246f5db184051cb6529b242b 8a342a5c6093230280749cf50f2ada7b52252e7f jobenaus <j.obenaus@icloud.com> 1654955740 +0200	rebase (finish): refs/heads/refactoring onto 7b1469bee73973fa3c56521499c00725adda365c
-8a342a5c6093230280749cf50f2ada7b52252e7f eb98ce9a523dadfccc5c85e7892f2c72f7caf6bc jobenaus <j.obenaus@icloud.com> 1654955815 +0200	commit: deleted main.log
-eb98ce9a523dadfccc5c85e7892f2c72f7caf6bc 50d4a1807182342d54e0c2afe1ddb13c3901610d jobenaus <j.obenaus@icloud.com> 1654955818 +0200	pull --tags origin refactoring: Merge made by the 'recursive' strategy.
-50d4a1807182342d54e0c2afe1ddb13c3901610d a01162c2654f3147d0745c0fe919b7ee45a00c30 jobenaus <j.obenaus@icloud.com> 1654958343 +0200	commit: updated .gitignore to *.code-workspace
