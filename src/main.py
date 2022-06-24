@@ -6,6 +6,7 @@ from helpers import load_settings
 def main():
     """Main function"""
     settings = load_settings()
+    print(f"settings: {settings}")
     # TODO Load interface.txt
     # TODO Make List of items that shall be added to Anki
     # TODO Write to items.txt
