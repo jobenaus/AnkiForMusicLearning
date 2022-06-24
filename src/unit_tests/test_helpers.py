@@ -12,4 +12,4 @@ class TestLoadSettings:
             load_settings()
         assert excinfo.value.args[0] == "settings.json not found"
 
-    # TODO test load_settings with settings.json file present and che ckeck if settings are loaded correctly
+    # TODO test load_settings with settings.json file present and check if settings are loaded correctly
