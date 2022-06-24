@@ -1,8 +1,9 @@
 """
 Test that the request function returns the correct request.
 """
-import pytest
+
 from anki_connect import request, handle_response
+import pytest
 
 
 class TestRequest:
