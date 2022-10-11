@@ -2,7 +2,7 @@
 Test that the request function returns the correct request.
 """
 import pytest
-from anki_connect import request, handle_response
+from anki_connect.anki_connect import request, handle_response
 
 
 class TestRequest:

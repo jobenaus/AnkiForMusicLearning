@@ -1,6 +1,12 @@
 """Contains helper functions for the main program."""
 
 import json
+
+
+from typing import Any, Optional
+
+
+
 from constants import (
     SETTINGS_FILE,
     DECK_CREATION_DATA_FILE,
@@ -10,8 +16,9 @@ from constants import (
 )
 
 
-def load_settings():
+def load_settings() -> dict[str, bool]:
     """Loads settings from settings.json."""
+    settings: Optional[dict[str,bool]] = None
     try:
         with open(SETTINGS_FILE, encoding="utf8") as settings_file:
             settings = json.load(settings_file)
@@ -50,7 +57,7 @@ def load_settings():
     return settings
 
 
-def create_default_settings():
+def create_default_settings() -> None:
     """Creates a default settings.json file."""
     with open(SETTINGS_FILE, "w", encoding="utf8") as settings_file:
         json.dump(DEFAULT_SETTINGS, settings_file)
@@ -58,13 +65,14 @@ def create_default_settings():
     print("Created default settings.json file.")
 
 
-def ask_to_fix_settings(err):
+# TODO: Correct Error typehint
+def ask_to_fix_settings(err: Any) -> None:
     """Asks the user to fix the settings.json file."""
     print(SETTINGS_FIXING_HINT)
     raise SystemExit(err) from err
 
 
-def load_deck_creation_data():
+def load_deck_creation_data() -> dict[str, Any]:
     """Loads deck creation data from deck_creation_data.json."""
     try:
         with open(DECK_CREATION_DATA_FILE, encoding="utf8") as deck_creation_data_file:
@@ -78,8 +86,8 @@ def load_deck_creation_data():
         raise SystemExit(err) from err
 
     # deck_creation_data.json misses some keys
+    some_keys_missing = False
     for key in EXAMPLE_DECK_CREATION_DATA:
-        some_keys_missing = False
         if key not in deck_creation_data:
             print(f"deck_creation_data.json is missing key: {key}.")
             some_keys_missing = True
@@ -89,10 +97,18 @@ def load_deck_creation_data():
     # deck_creation_data.json has invalid types
     some_types_invalid = False
     for key, item in EXAMPLE_DECK_CREATION_DATA.items():
+
         if not isinstance(deck_creation_data[key], type(item)):
             print(f"deck_creation_data.json has invalid type for key: {key}.")
             some_types_invalid = True
     if some_types_invalid:
         raise SystemExit(TypeError)
+
+    # TODO: check for value "" in deck_creation_data.json
+
+    # deck_creation_data misses deck title
+    if deck_creation_data["deck_info"]["title"] is None:
+        print("deck_creation_data.json misses deck title.")
+        raise SystemExit(ValueError)
 
     return deck_creation_data

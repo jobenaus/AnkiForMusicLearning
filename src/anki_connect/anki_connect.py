@@ -8,7 +8,6 @@ import urllib.request
 
 from constants import ANKI_CONNECT_URL, CONNECTION_ERROR_MESSAGE
 
-ANKI_CONNECT_URL = "http://localhost:8765"
 
 
 def request(action, **params):
