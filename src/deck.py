@@ -19,6 +19,10 @@ class Deck:
 
     name: str
     title: str
+    name: str = field(init=False)
+    instrument: Optional[str] = None
+    composer: Optional[str] = None
+    suffix: Optional[str] = None
 
     instrument: Optional[str] = None
     composer: Optional[str] = None
